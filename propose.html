@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 id="text"></h1>
+    <img src="images/stadium.jpg.jpeg" class="photo" id="img2">
+    <button id="btn" style="display:none"
+        onclick="location.href='yes.html'">
+        YES ☕❤️
+    </button>
+</div>
+
+<script src="script.js"></script>
+<script>
+typeText(
+  "text",
+  "Before I ask you something from my heart, let me ask you a few things first- if I’m Barcelona, would you be my Messi? if I’m Virat, would you be my Anushka?if I’m a long road, would you be the destination? if I’m chaos, would you be the calm?if I’m a bad day, would you be the reason it ends?if I’m silence, would you be the comfort?if I’m a song stuck in my head, would you be my favorite part?if I’m a cup of hot coffee, would you be the crush?☕ if I’m today, would you be my tomorrow?❤️ and now, the only question that really matters— if I’m just me…would you be mine? today, tomorrow, and for all the days we’re yet to live.💖",
+  70,
+  () => {
+    showImage("img2");
+    setTimeout(() => showImage("img3"), 900);
+    document.getElementById("btn").style.display = "inline-block";
+}
+
+);
+</script>
+</body>
+</html>

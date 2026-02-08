@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Things</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <p id="text"></p>
+    <img src="images/memories.jpg.jpeg" class="photo" id="img1">
+    <button id="btn" style="display:none"
+        onclick="location.href='feelings.html'">
+        Next →
+    </button>
+</div>
+
+<script src="script.js"></script>
+<script>
+typeText(
+  "text",
+  "It still amazes me how far we’ve come together. Almost three years now, years filled with meeting, endless video calls, and talking and sharing things and teas all the time. Somewhere along the way, you stopped being just a part of my day and became a part of my life. Your cuteness, your beauty, and your caring nature are things I notice every single time. Being with you feels safe more than home, like something that just fits. We’ve shared laughs, quiet moments, tough convos and everything in between, and each of those moments has only made our feelings stronger. These memories may seem simple, but they’re real, and they’re my favorite and somehow… you became my favorite part of the day. The laughs, the talks, rides, the little moments, and I choose you, every single day.",
+  60,
+  () => {
+    showImage("img1");
+    document.getElementById("btn").style.display = "inline-block";
+}
+);
+</script>
+</body>
+</html>

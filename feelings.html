@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg overlay" style="background-image:url('images/feels.jpg.jpeg')">
+<div class="container">
+    <p id="text"></p>
+    <button id="btn" style="display:none"
+        onclick="location.href='propose.html'">
+        One last thing →
+    </button>
+</div>
+
+<script src="script.js"></script>
+<script>
+typeText(
+  "text",
+  "“Loving you has been one of the most natural and comforting parts of my life. Over these almost three years, you’ve become my safe place, the person I turn to without thinking, the voice I want to hear at the end of the day, and the presence that makes everything feel a little more okay. With you, love has never felt heavy or rushed, it has felt patient, understanding, and steady. You’ve seen me at my best and at my most tired, and you’ve stayed the same caring, gentle, patient and supportive. Being with you has taught me what real partnership looks like just like Virat and Rohits's partnership. It’s in the small things like checking in on each other, sharing random thoughts and incidences, laughing at nothing, and being comfortable in silence. You make even ordinary days feel meaningful just by being part of them. Your cuteness still makes me smile, your beauty still catches my attention, and your caring nature continues to remind me how lucky I am. What we share isn’t about perfection; it’s about choosing each other, even on quiet days and imperfect ones. You’ve helped me grow in ways I didn’t expect, made me feel understood, and shown me that love can be calm and warm at the same time. I don’t take any of this for granted, not the time we’ve spent together, not the memories we’ve made, and not the future we’re building. Being with you feels like home, and that’s something I’ll always cherish.",
+  50,
+  () => document.getElementById("btn").style.display = "inline-block"
+);
+</script>
+</body>
+</html>
